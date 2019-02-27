@@ -1,0 +1,5 @@
+scrapy爬取u17动漫网站
+分页爬取
+数据本地化(json)
+数据持久化(mysql,mongodb)
+图片下载到服务器
