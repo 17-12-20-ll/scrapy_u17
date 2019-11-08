@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import json
+from lxml import etree
+from scrapy import Request
+
 from u17.agent_helper import get_random_agent
 from u17.items import U17Item
 

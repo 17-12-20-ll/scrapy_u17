@@ -5,7 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import pymysql
-import pymongo
+# import pymongo
 from scrapy import Request
 from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
@@ -47,6 +47,8 @@ class U17MysqlPipeline(object):
 
 
 class U17MongoPipeline(object):
+    """数据存入mongo"""
+
     def __init__(self, uri, database):
         self.uri = uri
         self.database = database

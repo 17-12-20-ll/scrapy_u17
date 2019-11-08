@@ -22,14 +22,14 @@ ROBOTSTXT_OBEY = False
 
 # mysql setting
 MYSQL_HOST = '127.0.0.1'
-MYSQL_PORT = 3307
+MYSQL_PORT = 3306
 MYSQL_USERNAME = 'root'
-MYSQL_PASSWORD = '123456'
-MYSQL_DATABASE = 'u17'
+MYSQL_PASSWORD = '1107'
+MYSQL_DATABASE = 'uyq'
 
 # MONGO setting
-MONGODB_URI = 'mongodb://127.0.0.1:27017'
-MONGODB_DATABASE = 'u17'
+# MONGODB_URI = 'mongodb://127.0.0.1:27017'
+# MONGODB_DATABASE = 'u17'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -76,7 +76,7 @@ MONGODB_DATABASE = 'u17'
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'u17.pipelines.U17MysqlPipeline': 300,
-    'u17.pipelines.U17MongoPipeline': 320,
+    # 'u17.pipelines.U17MongoPipeline': 320,
     'u17.pipelines.U17ImagePipeline': 340,
 
 }
